@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap prueba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mas Info
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Descargar App</a></li>
+                            <li><a class="dropdown-item" href="#">Tutoriales</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Premium</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="background-color: violet;">
+        <h2>¿Que es el Bootstrap?</h2>
+    </div>
+    <div class="container" style="background-color: wheat;">Es una herramienta de código abierto para diseño de
+        sitios y aplicaciones web</div>
+    <div class="container" style="background-color: lightcoral;">
+        <!-- fila 1 -->
+        <div class="container">
+            <div class="row">
+                <div class="col" style="background-color: lightblue;">
+                    <h2>Como se usa Bootstrap?</h2>
+                    <p> Bootstrap se basa en una rejilla de 12 columnas que se puede combinar de mil maneras adaptándose
+                        a diferentes resoluciones de pantalla. De nosotros depende luego cambiar el diseño de los
+                        elementos, adaptarlo las plantillas a nuestros propósitos o ampliarlo con otras herramientas</p>
+                </div>
+                <div class="col order-5" style="background-color: red;">
+                    <h2>Imagenes</h2>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="data:image/png;base64,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"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.stack.imgur.com/L8t19.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://unipython.com/wp-content/uploads/2020/06/1.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col order-1" style="background-color: greenyellow;">
+                    <form action="">
+                        <h2>Contacto</h2>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribanos un mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin fila 1 -->
+    <!-- fila 2 -->
+    <div class="row">
+        <div class="col" style="background-color:gold;">
+            <h2>Herramientas</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://themestr.app/images/themestr.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Customize</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+                                obcaecati illo atque delectus deleniti earum, maxime harum ab corrupti modi voluptatum
+                                sint fugit voluptatem doloribus explicabo necessitatibus cumque, consectetur neque.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.drupal.org/files/project-images/Screen%20Shot%202014-07-29%20at%204.12.44%20PM.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Layout</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                dolore, totam nam dolorem minus soluta accusamus sint, deserunt voluptatibus
+                                perspiciatis, officiis repellendus magni harum recusandae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://getbootstrap.com/docs/3.4/examples/screenshots/theme.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Content</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe facere
+                                alias modi quia non rerum ullam laudantium, fugit, possimus, eaque eligendi quod nisi
+                                neque aliquam omnis natus consequuntur iusto optio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://codepen.io/JacobLett/pen/QrpJEp/image/large.png" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Forms</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                                itaque dolorem quae laboriosam quo reiciendis. Laborum laboriosam atque ipsum
+                                repudiandae asperiores ullam necessitatibus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="background-color: pink;">
+            <h2>Herramientas mas usadas</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Herramientas</th>
+                        <th scope="col">Cantidad de usos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Components</td>
+                        <td>14.246.345</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Content</td>
+                        <td>10.567-009</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Forms</td>
+                        <td>7.321.678</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Layout</td>
+                        <td>4.097.564</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Customize</td>
+                        <td>1.990.765</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
